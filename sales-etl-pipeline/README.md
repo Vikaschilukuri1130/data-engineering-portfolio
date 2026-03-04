@@ -1,44 +1,37 @@
 # Sales Data ETL Pipeline
 
 ## Overview
-This project demonstrates an end-to-end ETL (Extract, Transform, Load) pipeline for processing sales data.
+This project demonstrates an end-to-end ETL pipeline built using Python.
 
-The pipeline extracts raw data from CSV files, transforms it using Python, and prepares it for loading into a database or data warehouse.
-
-## Technologies Used
-
-- Python
-- Pandas
-- SQL
-- ETL Pipeline Design
-- Data Processing
+The pipeline extracts sales data from a CSV file, transforms it, and loads the cleaned data into an output dataset.
 
 ## Project Structure
 
 sales-etl-pipeline
 │
-├── README.md
-└── scripts
-    └── extract.py
+├── data
+│   └── sales_data.csv
+│
+├── scripts
+│   ├── extract.py
+│   ├── transform.py
+│   └── load.py
+│
+├── output
+│
+└── README.md
 
 ## Pipeline Steps
 
-1. **Extract**
-   - Read raw sales data from CSV files
-   - Load data into a Pandas DataFrame
+Extract → Transform → Load
 
-2. **Transform**
-   - Clean missing values
-   - Remove duplicates
-   - Create calculated columns
+1. Extract raw sales data
+2. Transform data using Pandas
+3. Load cleaned data into output folder
 
-3. **Load**
-   - Store processed data into a database or warehouse
+## Technologies Used
 
-## Purpose
-
-This project demonstrates practical data engineering skills including:
-
-- ETL pipeline development
-- Python data processing
-- Data cleaning and transformation
+Python  
+Pandas  
+Git  
+GitHub
